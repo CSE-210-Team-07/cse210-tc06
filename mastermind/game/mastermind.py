@@ -17,8 +17,8 @@ class Mastermind:
         """
         print("\n---------------------------")
         for i in range(len(self._players)):
-            print("Player " + player.get_name + code.guess + ",", end = "")
-            print(self.encode(code.get_code,code.get_guess))
+            print("Player " + player.get_name() + code.get_guess() + ",", end = "")
+            print(self.encode(code.get_code(),code.get_guess()))
         print("\n---------------------------")
     
     def encode(self, code, guess):
@@ -40,6 +40,6 @@ class Mastermind:
     def _prepare(self):
         numOfPlayers = len(roster.players)
         for i in range(numOfPlayers):
-            playerCode = code.get_code
+            playerCode = code.get_code()
             self._players.append(playerCode)
     
