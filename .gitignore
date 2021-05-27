@@ -1,3 +1,7 @@
 .vscode
 mastermind/game/.DS_Store
+<<<<<<< HEAD
 __main__.py
+=======
+__main__.py
+>>>>>>> 3f2517813409bb97993bf7217feb63eed5a9cfb1
